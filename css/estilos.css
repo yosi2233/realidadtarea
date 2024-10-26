@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav .menu a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #f8f8f8;
+  margin-right: 15px;
+}
+
+/* Reglas para los párrafos */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  /* Fija el menú en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Asegura que ocupe todo el ancho de la pantalla */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #060606;
+  /* Color de fondo */
+  box-shadow: 0px 4px 2px -2px gray;
+  /* Agrega una sombra para separarlo visualmente del contenido */
+  z-index: 1000;
+  /* Asegura que esté por encima del contenido */
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url('../img/logo.jpg');
+  /* Reemplaza con la ruta de tu logo */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.menu a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #e01d1d;
+}
+
+.fondo-imagen,
+section {
+  margin-top: 10px;
+  /* Ajusta este valor dependiendo de la altura del menú */
+}
+
+.fondo-imagen {
+  width: 100%;
+  height: 500px;
+  /* Ajusta la altura según lo necesites */
+  background-image: url('../img/fondo.webp');
+  /* Cambia a la ruta de tu imagen */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 0; 
+  padding-bottom: 0; /* Elimina el relleno inferior */
+}
+section {
+  margin-top: 0;
+  padding: 20px;
+  font-size: 18px;
+  background-color: #9ba8ac;
+  color: #020202;
+}
+h2 {
+  margin-top: 0; /* Elimina el espacio superior del h2 */
+  padding-top: 0; /* Elimina cualquier relleno superior */
+}
+.box {
+  border: 1px solid #9497ae; /* Borde gris claro */
+  padding: 20px; /* Espaciado interno */
+  background-color: #939cb3; /* Color de fondo para la caja */
+  margin-top: 10px; /* Espacio entre el h2 y la caja */
+  border-radius: 5px; /* Bordes redondeados */
+}
+.imagen-flotante {
+  float: left; /* Hace que la imagen flote a la izquierda */
+  margin-right: 15px; /* Espacio entre la imagen y el texto */
+  width: 300px; /* Ajusta el tamaño de la imagen */
+  height: auto; 
+}
+.contactos-container {
+  display: flex;
+  gap: 20px;
+  background-color: #def1f7;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.contacto-item {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #b3eff6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  background-color: #9faafd;
+}
+
+.contacto-item h3 {
+  margin-bottom: 10px;
+}
+
+.contacto-item p {
+  margin: 5px 0;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.social-icons img {
+  width: 30px;
+  height: auto;
+  margin: 0 10px;
+}
